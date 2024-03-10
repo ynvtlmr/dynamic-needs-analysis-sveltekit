@@ -14,7 +14,9 @@
 		"test:integration": "playwright test",
 		"test:unit": "vitest run",
 		"prepare": "husky",
-		"snyk": "snyk test"
+		"snyk": "snyk test",
+		"update:check": "npm outdated",
+		"update:fix": "npm update"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",

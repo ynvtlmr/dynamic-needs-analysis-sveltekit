@@ -1,3 +1,4 @@
+npm run update:fix
 npx lint-staged
 npm run snyk
 npm test
