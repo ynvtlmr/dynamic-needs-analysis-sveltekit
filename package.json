@@ -13,7 +13,8 @@
 		"format": "prettier --write . && eslint --fix .",
 		"test:integration": "playwright test",
 		"test:unit": "vitest run",
-		"prepare": "husky"
+		"prepare": "husky",
+		"snyk": "snyk test"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
