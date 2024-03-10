@@ -1,4 +1,7 @@
 npm run update:fix
+npm run format
+npm run typecheck
 npx lint-staged
 npm run snyk
-npm test
+npm run check
+npm run test
