@@ -26,6 +26,7 @@ jobs:
         run: echo "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS_JSON }}" > firebase-service-account.json
         env:
           GOOGLE_APPLICATION_CREDENTIALS_JSON: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS_JSON }}
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
 
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
@@ -33,3 +34,4 @@ jobs:
           args: deploy --only hosting
         env:
           GOOGLE_APPLICATION_CREDENTIALS: ${{ github.workspace }}/firebase-service-account.json
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
